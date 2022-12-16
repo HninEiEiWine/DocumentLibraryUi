@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "document-library-ui-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/documentLibraryUi/DocumentLibraryUiWebPart.js",
+          "manifest": "./src/webparts/documentLibraryUi/DocumentLibraryUiWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DocumentLibraryUiWebPartStrings": "lib/webparts/documentLibraryUi/loc/{locale}.js"
+  }
+}

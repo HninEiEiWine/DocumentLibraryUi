@@ -1,0 +1,274 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.documentLibraryUi {
+  .container {
+    max-width: 100%;
+    margin: 0px auto;
+    // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+  .b{
+    font-size:30pt;
+    // text-transform:uppercase;
+    color:#000000;
+    background-color: white;
+    }
+  .row {
+color:#fff;
+  width:100% ;
+  }
+
+ 
+.table{ border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;}
+
+  .th
+  {
+    background-color: #141461;
+    color:#fff;
+    font-size: 10pt;
+    word-wrap: break-word;
+    font-weight: bold;text-align: center;
+  }
+  .th1
+  {
+    background-color: #ececec;
+    color:#000000;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  td:nth-child(2),td:nth-child(3),td:nth-child(4){ 
+    text-align:left;
+   }
+   td[data-label="Attachment"]{vertical-align: middle;}
+   td[data-label="Attachment"] img:hover{cursor: pointer;}
+@media screen and (max-width: 1400px) {
+    
+     img{width:48px;
+      height:48px;}
+  }
+  @media screen and (max-width: 1350px) {
+   img{width:46px;
+      height:46px;}
+  }
+  @media screen and (max-width: 1300px) {
+    
+     img{width:44px;
+      height:44px;}
+  }
+  @media screen and (max-width: 1250px) {
+    img{width:42px;
+      height:42px;}
+  }
+  @media screen and (max-width: 1200px) {
+    img{width:40px;
+      height:40px;}
+  }
+  @media screen and (max-width: 1150px) {
+    
+    .th1,.th{
+      font-size: 9pt;
+      // background-color: #f09a9a;
+    } 
+  }
+  @media screen and (max-width: 1100px) {
+    .b{font-size:25pt;}
+    .th1,.th{
+      font-size: 8.5pt;
+      // background-color: #3521e7;
+    } img{width:38px;
+      height:38px;}
+  }
+  @media screen and (max-width: 1050px) {
+ 
+    .th1,.th{
+      font-size: 8pt;
+      // background-color: #21afe7;
+    } img{width:38px;
+      height:38px;}
+  }
+  @media screen and (max-width: 1000px) {
+   
+    .th1,.th{
+      font-size: 7.5pt;
+      // background-color: #21e7a5;
+    } img{width:38px;
+      height:38px;}
+  }
+  @media screen and (max-width: 950px) {
+    
+        .th1,.th{
+          font-size: 7pt;
+          // background-color: #21e7a5;
+        }
+     img{width:36px;
+      height:36px;}
+  }
+  @media screen and (max-width: 900px) {
+  
+    .th1,.th{
+          font-size: 6.5pt;
+          // background-color: #21e7a5;
+        } img{width:36px;
+      height:36px;}
+  }
+  @media screen and (max-width: 850px) {
+ 
+     img{width:34px;
+      height:34px;}
+    
+  }
+  @media screen and (max-width: 800px) {
+    .b{font-size:20pt;}
+    img{width:34px;
+      height:34px;}
+    
+  }
+  @media screen and (max-width:750px) {
+    td:nth-child(2),td:nth-child(3),td:nth-child(4){ 
+      text-align:right;
+     }
+    table {
+      border: 0;
+      width: 100%;
+    }
+  
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid rgb(0, 0, 0);
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: 6.5pt;
+      text-align: right;
+ 
+      
+    }
+    
+    table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 7.5pt;
+      color: #b85900;
+     
+      // height: inherit;
+    }
+    table td div{max-width:65%;
+      // border:1px solid #000;
+      overflow:hidden;text-align:justify;
+      // background-color: pink;
+      margin-left: 130px;
+    }
+    table td:last-child {
+      border-bottom:0;
+      height: 10px;
+    
+    }
+    img{width:15px;height: 15px;}
+  }
+  @media(max-width: 700px)
+  {
+            .b{font-size:18pt;}
+  
+  }
+  @media (max-width: 600px)
+  {
+            .b{font-size:14pt;}
+            table td div{max-width:60%;
+              // border:1px solid #000;
+              overflow:hidden;text-align:justify;
+              // background-color: rgb(248, 19, 57);
+              margin-left: 130px;
+            }
+  
+  }
+  @media (max-width: 500px)
+  {
+            .b{font-size:12pt;}
+            table td div{max-width:55%;
+              // border:1px solid #000;
+              overflow:hidden;text-align:justify;
+              // background-color: rgb(71, 7, 71);
+              margin-left: 130px;
+            }
+            table td::before {
+            
+              font-size: 7pt;
+             
+            }
+  
+  }
+
+  @media (max-width: 450px)
+  {
+            .b{font-size:12pt;}
+            table td div{max-width:50%;
+              // border:1px solid #000;
+              overflow:hidden;text-align:justify;
+              // background-color: rgb(71, 165, 34);
+              margin-right: 0%;
+              margin-left: 120px;
+              // border: 1px solid #000;
+              
+            }
+            // table td{  border: 3px solid rgb(189, 17, 17);}
+            table td::before {
+              // border: 1px solid rgb(16, 6, 102);
+              font-size: 6pt;
+             
+             
+              // height: inherit;
+            }
+  
+  }
+
+  @media (max-width: 400px)
+  {
+            .b{font-size:10pt;}
+            table td div{max-width:50%;
+              // border:1px solid #000;
+              overflow:hidden;text-align:justify;
+              // background-color: rgb(201, 98, 38);
+              margin-left: 50%;
+            }
+          
+  }
+                
+}

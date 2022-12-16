@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "document-library-ui-client-side-solution",
+    "id": "dea31ca1-4d82-480b-a343-01a108c150af",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.16.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "document-library-ui description"
+      },
+      "longDescription": {
+        "default": "document-library-ui description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "document-library-ui Feature",
+        "description": "The feature that activates elements of the document-library-ui solution.",
+        "id": "092ff2e1-61f8-4f26-8b9c-55e3cfdcef7b",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/document-library-ui.sppkg"
+  }
+}
